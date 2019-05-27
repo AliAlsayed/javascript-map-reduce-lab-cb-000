@@ -9016,3 +9016,9 @@ const openIssues = issues.filter(issue => issue.state === 'open')
 
 const nonAutomaticIssues = issues.filter(
   issue => issue.body !== "This pull request has been automatically created by learn.co.")
+
+
+
+
+
+var table_body = document.getElementById('#results')

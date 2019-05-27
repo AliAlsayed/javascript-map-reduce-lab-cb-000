@@ -9021,4 +9021,4 @@ const nonAutomaticIssues = issues.filter(
 
 
 
-const $tbody = window.document.getElementById('results');
+const $tbody = document.getElementById('results');

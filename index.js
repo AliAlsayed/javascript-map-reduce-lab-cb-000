@@ -9021,4 +9021,12 @@ const nonAutomaticIssues = issues.filter(
 
 
 
-const $tbody = document.getElementById('results');
+  const $tbody = document.getElementById('results');
+  $tbody.innerHTML = nonAutomaticIssues
+    .map(issue => `<tr>
+      <td>${issue.body}</td>
+      <td>${issue.created_at}</td>
+      <td>${issue.state}</td>
+      </tr>`
+    )
+    .join('');
